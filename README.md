@@ -23,6 +23,7 @@ Setting up Fixity Berry
 6) Login to the Linux command line.  Install the following packages needed by FixityBerry by issuing the following command.
 
 wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/Install.sh
+
 ./Install.sh YOUR_EMAIL_ADDRESS@gmail.com
 
 
