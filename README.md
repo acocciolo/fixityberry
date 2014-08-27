@@ -20,7 +20,7 @@ Setting up Fixity Berry
 
 5) Set the administrative password for the Rasbperry Pi and don’t forget it.  The default username should be pi.
 
-6) Login to the Linux command line.  Install the following packages needed by FixityBerry by issuing the following command.
+6) Login to the Linux command line, and inssue the following two commands.  Be sure to replace YOUR_EMAIL_ADDRESS@gmail.com with your actual email address of where you want to receive the fixity reports.
 
 wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/Install.sh
 
