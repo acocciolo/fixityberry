@@ -26,7 +26,14 @@ wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/Install.sh
 
 sudo ./Install.sh YOUR_EMAIL_ADDRESS@gmail.com
 
-
 7) Optional: Connect Raspberry Pi and hard drives to a power strip, and connect to it a power timer so that the fixity checking can occur weekly.  For example, the Stanley Power Timer is an inexpensive option available at Amazon: 
 
 http://www.amazon.com/Stanley-31200-TimerMax-Grounded-1-Outlet/dp/B0020ML744
+
+
+Advanced Uses
+=============
+
+Note that FixityBerry will shutdown the Pi two minutes after completing scans of the drives.  To cancel this process, issue the followign command via the Linux prompt before the 2-minutes are up:
+
+sudo shutdown -c 
