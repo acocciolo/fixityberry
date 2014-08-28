@@ -16,7 +16,7 @@ Setting up Fixity Berry
 
 3) Have a standard definition or high-definition television available for setting up the PI.  You will only need this setup temporarily.  
 
-4) Connect a USB Keyboard and mouse to the PI.  Power-up the device.
+4) Connect a USB Keyboard and mouse to the PI.  Keep the device connected to an Ethernet cable (needed to send the email over the Internet).  Power-up the device.
 
 5) Set the administrative password for the Rasbperry Pi and don’t forget it.  The default username should be pi.
 
