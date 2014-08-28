@@ -20,3 +20,6 @@ wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/00_create_mo
 
 cd /usr/share/usbmount
 wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/usbmount
+
+cd /etc
+wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/rc.local
