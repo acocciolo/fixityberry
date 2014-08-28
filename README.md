@@ -24,7 +24,7 @@ Setting up Fixity Berry
 
 wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/Install.sh
 
-./Install.sh YOUR_EMAIL_ADDRESS@gmail.com
+sudo ./Install.sh YOUR_EMAIL_ADDRESS@gmail.com
 
 
 7) Optional: Connect Raspberry Pi and hard drives to a power strip, and connect to it a power timer so that the fixity checking can occur weekly.  For example, the Stanley Power Timer is an inexpensive option available at Amazon: 
