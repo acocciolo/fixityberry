@@ -5,7 +5,7 @@ fixityberry
 Overview
 =======
 
-FixityBerry is software that runs on a Raspberry Pi computer that runs fixity scans on all hard drives connected via USB.  The Pi is able to read a wide variety of drive formats because packages are available for Linux for doing this.  It sends an email once scanning is complete.  The Raspberry Pi—-with connected hard drives—can be connected to a power timer that it it gets run weekly.
+FixityBerry is software that runs on a Raspberry Pi computer that runs fixity scans on all hard drives connected via USB.  The Pi is able to read a wide variety of drive formats because packages are available for Linux for doing this.  It sends an email once scanning is complete, and shutdown the device.  The Raspberry Pi—with connected hard drives—can be connected to a power timer that automatically runs the scans weekly.
 
 Setting up Fixity Berry
 =======================
@@ -27,9 +27,6 @@ wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/Install.sh
 ./Install.sh YOUR_EMAIL_ADDRESS@gmail.com
 
 
-
-
-
-Optional: Connect Raspberry Pi and hard drives to a power strip, and connect to it a power timer so that the fixity checking can occur weekly.  For example, the Stanley Power Timer is available at Amazon: 
+7) Optional: Connect Raspberry Pi and hard drives to a power strip, and connect to it a power timer so that the fixity checking can occur weekly.  For example, the Stanley Power Timer is an inexpensive option available at Amazon: 
 
 http://www.amazon.com/Stanley-31200-TimerMax-Grounded-1-Outlet/dp/B0020ML744
