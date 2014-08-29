@@ -41,3 +41,9 @@ Advanced Uses
 Note that FixityBerry will shutdown the Pi two minutes after completing scans of the drives.  To cancel this process, issue the followign command via the Linux prompt before the 2-minutes are up:
 
     sudo shutdown -c 
+    
+About
+-----
+FixityBerry is created by Anthony Cocciolo 
+Contact: acocciol@pratt.edu 
+Website: http://www.thinkingprojects.org
