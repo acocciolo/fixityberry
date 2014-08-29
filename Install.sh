@@ -1,3 +1,4 @@
+apt-get update
 apt-get install php5
 apt-get install exfat-fuse
 apt-get install usbmount
