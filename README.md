@@ -25,8 +25,12 @@ Setting up Fixity Berry
     wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/Install.sh
 
     sudo ./Install.sh YOUR_EMAIL_ADDRESS@gmail.com
+    
+7) With your hard drives connected with USB (you may want to use a USB splitter if you have several hard drives), restart the PI.  When the PI starts up, it will do the fixity scans, email you, and power down.  To restart, issue the followign command:
 
-7) Optional: Connect Raspberry Pi and hard drives to a power strip, and connect to it a power timer so that the fixity checking can occur weekly.  For example, the Stanley Power Timer is an inexpensive option available at Amazon: 
+    sudo shutdown -r now
+
+8) Optional: Connect Raspberry Pi and hard drives to a power strip, and connect to it a power timer so that the fixity checking can occur weekly.  For example, the Stanley Power Timer is an inexpensive option available at Amazon: 
 
 http://www.amazon.com/Stanley-31200-TimerMax-Grounded-1-Outlet/dp/B0020ML744
 
