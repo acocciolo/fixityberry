@@ -11,7 +11,7 @@ cd /home/pi
 
 wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/fixity_berry_orig.php
 
-(echo "<?php \$email_report_to = \"$1\"; ?>" ; cat fixity_berry_orig.php) > fixity_berry.php
+(echo "<?php \$email_report_to = \"$1\"; \n mysql_connect(\"localhost\", \"fixity_berry\", \"$3\"); ?>" ; cat fixity_berry_orig.php) > fixity_berry.php
 
 cd /etc/usbmount
 wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/usbmount.conf
