@@ -9,6 +9,12 @@ apt-get install ssmtp mailutils mpack
 
 cd /home/pi
 
+wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/fixity_berry.sql
+
+mysql --user=root --password="$2" -e "CREATE DATABASE fixity_berry; CREATE USER 'fixity_berry'@'localhost' IDENTIFED BY '$3'; GRANT ALL PRIVILEGES ON *.* TO 'fixity_berry'@'localhost';"
+mysql --user=fixity_berry --password="$3" < fixity_berry.sql
+
+
 wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/fixity_berry_orig.php
 
 (echo "<?php \$email_report_to = \"$1\"; \n mysql_connect(\"localhost\", \"fixity_berry\", \"$3\"); ?>" ; cat fixity_berry_orig.php) > fixity_berry.php
