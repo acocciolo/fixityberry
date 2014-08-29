@@ -22,9 +22,9 @@ Setting up Fixity Berry
 
 6) Login to the Linux command line, and inssue the following two commands.  Be sure to replace YOUR_EMAIL_ADDRESS@gmail.com with your actual email address of where you want to receive the fixity reports.
 
-   wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/Install.sh
+    wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/Install.sh
 
-   sudo ./Install.sh YOUR_EMAIL_ADDRESS@gmail.com
+    sudo ./Install.sh YOUR_EMAIL_ADDRESS@gmail.com
 
 7) Optional: Connect Raspberry Pi and hard drives to a power strip, and connect to it a power timer so that the fixity checking can occur weekly.  For example, the Stanley Power Timer is an inexpensive option available at Amazon: 
 
@@ -36,4 +36,4 @@ Advanced Uses
 
 Note that FixityBerry will shutdown the Pi two minutes after completing scans of the drives.  To cancel this process, issue the followign command via the Linux prompt before the 2-minutes are up:
 
-   sudo shutdown -c 
+    sudo shutdown -c 
