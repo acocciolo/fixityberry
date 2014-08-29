@@ -20,13 +20,13 @@ Setting up Fixity Berry
 
 5) Set the administrative password for the Rasbperry Pi and don’t forget it.  The default username should be pi.
 
-6) Login to the Linux command line, and inssue the following two commands.  Be sure to replace YOUR_EMAIL_ADDRESS@gmail.com with your actual email address of where you want to receive the fixity reports.
+6) Login to the Linux command line, and inssue the following two commands.  Be sure to replace YOUR_EMAIL_ADDRESS@gmail.com with your actual email address of where you want to receive the fixity reports.  Also, enter the MySQL root password and the FixityBerry database password, which will be used by the Install script to setup the database.
 
     wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/Install.sh
     
     chmod u+x Install.sh
 
-    sudo ./Install.sh YOUR_EMAIL_ADDRESS@gmail.com
+    sudo ./Install.sh YOUR_EMAIL_ADDRESS@gmail.com MYSQL_ROOT_PASSWORD FIXITY_BERRY_DATABASE_PASSWORD
     
 When prompted to install packages, answer "Y" for "Yes."
     
