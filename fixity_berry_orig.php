@@ -3,7 +3,7 @@
 // Checks the fixity of USB mounted drives.  Designed to work on Raspberry Pi.
 // Requires that USBMount be installed with some tweaks.
 
-mysql_connect("localhost", "fixity_berry", "144berry");
+
 mysql_select_db("fixity_berry");
 
 function dir_in_db($dir, &$file_cnt = NULL, &$dir_cnt = NULL)
