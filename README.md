@@ -23,8 +23,12 @@ Setting up Fixity Berry
 6) Login to the Linux command line, and inssue the following two commands.  Be sure to replace YOUR_EMAIL_ADDRESS@gmail.com with your actual email address of where you want to receive the fixity reports.
 
     wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/Install.sh
+    
+    chmod u+x Install.sh
 
     sudo ./Install.sh YOUR_EMAIL_ADDRESS@gmail.com
+    
+When prompted to install packages, answer "Y" for "Yes."
     
 7) With your hard drives connected with USB (you may want to use a USB splitter if you have several hard drives), restart the PI.  When the PI starts up, it will do the fixity scans, email you, and power down.  To restart, issue the followign command:
 
