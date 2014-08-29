@@ -1,11 +1,6 @@
 apt-get update
-apt-get install php5
-apt-get install exfat-fuse
-apt-get install usbmount
-apt-get install fuse ntfs-3g
-apt-get install mysql-server
-apt-get install php5-mysql
-apt-get install ssmtp mailutils mpack
+apt-get -y install php5 exfat-fuse usbmount fuse ntfs-3g mysql-server php5-mysql ssmtp mailutils mpack
+
 
 cd /home/pi
 
