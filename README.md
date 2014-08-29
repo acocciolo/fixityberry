@@ -20,7 +20,7 @@ Setting up Fixity Berry
 
 5) Set the administrative password for the Rasbperry Pi and don’t forget it.  The default username should be pi.
 
-6) Login to the Linux command line, and inssue the following commands.  Be sure to replace all the request values.  Your GMail email address and Gmail password is required so that the Pi can connect to an outgoing mail server to send the email message. 
+6) Login to the Linux command line, and issue the following commands.  Be sure to replace all the request values.  Your GMail email address and Gmail password is required so that the Pi can connect to an outgoing mail server to send the email message. 
 
     wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/Install.sh
     
