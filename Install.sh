@@ -1,3 +1,4 @@
+#!/bin/bash
 apt-get update
 apt-get -y install php5 exfat-fuse usbmount fuse ntfs-3g ssmtp mailutils mpack
 debconf-set-selections <<< 'mysql-server-5.1 mysql-server/root_password password $2'
