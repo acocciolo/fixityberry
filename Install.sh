@@ -1,5 +1,8 @@
 apt-get update
-apt-get -y install php5 exfat-fuse usbmount fuse ntfs-3g mysql-server php5-mysql ssmtp mailutils mpack
+apt-get -y install php5 exfat-fuse usbmount fuse ntfs-3g ssmtp mailutils mpack
+debconf-set-selections <<< 'mysql-server-5.1 mysql-server/root_password password $2'
+debconf-set-selections <<< 'mysql-server-5.1 mysql-server/root_password_again password $2'
+sudo apt-get -y install mysql-server php5-mysql
 
 
 cd /home/pi
