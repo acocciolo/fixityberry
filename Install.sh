@@ -14,7 +14,7 @@ mysql --user=fixity_berry --password="$3" < fixity_berry.sql
 
 wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/fixity_berry_orig.php
 
-(echo "<?php \$email_report_to = \"$1\"; \n mysql_connect(\"localhost\", \"fixity_berry\", \"$3\"); ?>" ; cat fixity_berry_orig.php) > fixity_berry.php
+(echo -e "<?php \$email_report_to = \"$1\"; \n mysql_connect(\"localhost\", \"fixity_berry\", \"$3\"); ?>" ; cat fixity_berry_orig.php) > fixity_berry.php
 
 wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/usbmount.conf
 mv usbmount.conf /etc/usbmount/
@@ -27,3 +27,5 @@ mv usbmount /usr/share/usbmount/
 
 wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/rc.local
 mv rc.local /etc/
+
+echo -e "mailhub=ssmtp.gmail.com:587\nAuthUser=$4\nAuthPass=$5\nuseSTARTTLS=YES\nFromLineOverride=NO" >> /etc/ssmtp/ssmtp.conf
