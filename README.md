@@ -16,7 +16,7 @@ Setting up Fixity Berry
 
 3) Have a standard definition or high-definition television available for setting up the PI.  You will only need this setup temporarily.  
 
-4) Connect a USB Keyboard and mouse to the PI.  Keep the device connected to an Ethernet cable (needed to send the email over the Internet).  Power-up the device.
+4) Connect a USB Keyboard to the PI.  Keep the device connected to an Ethernet cable (needed to send the email over the Internet).  Power-up the device.
 
 5) Set the administrative password for the Rasbperry Pi and don’t forget it.  The default username should be pi.
 
@@ -28,11 +28,12 @@ Setting up Fixity Berry
 
     sudo ./Install.sh YOUR_EMAIL_ADDRESS@gmail.com MYSQL_ROOT_PASSWORD FIXITY_BERRY_DATABASE_PASSWORD
     
-When prompted to install packages, answer "Y" for "Yes."
     
 7) With your hard drives connected with USB (you may want to use a USB splitter if you have several hard drives), restart the PI.  When the PI starts up, it will do the fixity scans, email you, and power down.  To restart, issue the followign command:
 
     sudo shutdown -r now
+    
+You can now remove the keyboard and television, since you will not need to interact with it this way.
 
 8) Optional: Connect Raspberry Pi and hard drives to a power strip, and connect to it a power timer so that the fixity checking can occur weekly.  For example, the Stanley Power Timer is an inexpensive option available at Amazon: 
 
