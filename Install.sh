@@ -10,12 +10,11 @@ cd /home/pi
 
 wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/fixity_berry.sql
 
-mysql --user=root --password="$2" -e "CREATE DATABASE fixity_berry; CREATE USER fixity_berry\@localhost IDENTIFED BY '$3'; GRANT ALL PRIVILEGES ON *.* TO fixity_berry@localhost;"
-mysql --user=fixity_berry --password="$3" fixity_berry < fixity_berry.sql
+mysql --user=root --password=$2  < fixity_berry.sql
 
 wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/fixity_berry_orig.php
 
-(echo -e "<?php \$email_report_to = \"$1\"; \n mysql_connect(\"localhost\", \"fixity_berry\", \"$3\"); ?>" ; cat fixity_berry_orig.php) > fixity_berry.php
+(echo -e "<?php \$email_report_to = \"$1\"; \n mysql_connect(\"localhost\", \"root\", \"$2\"); ?>" ; cat fixity_berry_orig.php) > fixity_berry.php
 
 wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/usbmount.conf
 mv usbmount.conf /etc/usbmount/
@@ -32,4 +31,4 @@ wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/rc.local
 mv rc.local /etc/
 chmod ugo+x /etc/rc.local
 
-echo -e "mailhub=ssmtp.gmail.com:587\nAuthUser=$4\nAuthPass=$5\nuseSTARTTLS=YES\nFromLineOverride=NO" >> /etc/ssmtp/ssmtp.conf
+echo -e "mailhub=ssmtp.gmail.com:587\nAuthUser=$3\nAuthPass=$4\nuseSTARTTLS=YES\nFromLineOverride=NO" >> /etc/ssmtp/ssmtp.conf
