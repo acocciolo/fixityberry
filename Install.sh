@@ -31,4 +31,4 @@ wget https://raw.githubusercontent.com/acocciolo/fixityberry/master/rc.local
 mv rc.local /etc/
 chmod ugo+x /etc/rc.local
 
-echo -e "mailhub=ssmtp.gmail.com:587\nAuthUser=$3\nAuthPass=$4\nuseSTARTTLS=YES\nFromLineOverride=NO" >> /etc/ssmtp/ssmtp.conf
+echo -e "mailhub=smtp.gmail.com:587\nAuthUser=$3\nAuthPass=$4\nuseSTARTTLS=YES\nFromLineOverride=NO" >> /etc/ssmtp/ssmtp.conf
