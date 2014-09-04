@@ -1,6 +1,6 @@
 fixityberry
 ===========
-
+![Image of FixityBerry](https://raw.githubusercontent.com/acocciolo/fixityberry/master/fixity_berry_pic.jpg)
 
 Overview
 --------
