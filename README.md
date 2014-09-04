@@ -29,7 +29,7 @@ Setting up Fixity Berry
     sudo ./Install.sh YOUR_EMAIL_ADDRESS@HOST.COM MYSQL_ROOT_PASSWORD GMAIL_EMAIL_ADDRESS@gmail.com GMAIL_PASSWORD
     
     
-7) With your hard drives connected with USB (you may want to use a USB splitter if you have several hard drives), restart the PI.  When the PI starts up, it will do the fixity scans, email you, and power down.  To restart, issue the followign command:
+7) With your hard drives connected with USB (you may want to use a USB splitter if you have several hard drives), restart the PI.  When the PI starts up, it will do the fixity scans, email you, and power down.  To restart, issue the following command:
 
     sudo shutdown -r now
     
