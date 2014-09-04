@@ -265,7 +265,7 @@ if (file_exists($startDir))
 else
 {
 	$errors_found = true;
-	$message = "No USB devices were found attached to the PI."
+	$message = "No USB devices were found attached to the Pi.";
 }	
 
 // check that nothing in the database can't be found anymore
