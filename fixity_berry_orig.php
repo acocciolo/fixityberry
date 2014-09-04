@@ -242,20 +242,31 @@ $dir_cnt = 0;
 $errors_found = false;
 $message = "";
 
+
 // check if first time run
 $first_time_run = first_time_run();
 
-// check all muounted dirves, except hidden
-$scan = preg_grep('/^([^.])/', scandir($startDir));
-foreach($scan as $file)
+
+if (file_exists($startDir))
 {
-	if (!($file == "." || $file == ".."))
+	// check all muounted dirves, except hidden
+	$scan = preg_grep('/^([^.])/', scandir($startDir));
+	foreach($scan as $file)
 	{
-		$fullname = $startDir . "/" . $file;
-   		if (is_dir($fullname))
-    		fixityCheck($fullname);
-    }
+		if (!($file == "." || $file == ".."))
+		{
+			$fullname = $startDir . "/" . $file;
+	   		if (is_dir($fullname))
+	    		fixityCheck($fullname);
+	    }
+	}
+
 }
+else
+{
+	$errors_found = true;
+	$message = "No USB devices were found attached to the PI."
+}	
 
 // check that nothing in the database can't be found anymore
 if (!$first_time_run)
