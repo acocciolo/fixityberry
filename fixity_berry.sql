@@ -2,6 +2,9 @@
 --
 -- Table structure for table `dirs`
 --
+CREATE DATABASE fixity_berry;
+USE fixity_berry;
+
 
 DROP TABLE IF EXISTS `dirs`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
