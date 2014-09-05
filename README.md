@@ -1,5 +1,6 @@
 fixityberry
 ===========
+*Environmentally Sustainable Digital Preservation for Very Low Resourced Cultural Heritage Institutions*
 ![Image of FixityBerry](https://raw.githubusercontent.com/acocciolo/fixityberry/master/fixity_berry_pic.jpg)
 
 Overview
