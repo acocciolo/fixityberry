@@ -34,11 +34,13 @@ Setting up Fixity Berry
 
     sudo shutdown -r now
     
-You can now remove the keyboard and television, since you will not need to interact with it this way.
+You can now remove the keyboard and television, since you will not need to interact with it this way.  However, you should leave the Ethernet cable connected since it will need this to send you email reports.
 
 8) Optional: Connect Raspberry Pi and hard drives to a power strip, and connect to it a power timer so that the fixity checking can occur weekly.  For example, the Stanley Power Timer is an inexpensive option available at Amazon: 
 
 http://www.amazon.com/Stanley-31200-TimerMax-Grounded-1-Outlet/dp/B0020ML744
+
+Make sure that you set the timer such that it gives FixityBerry enough time to run.  For example, if it takes FixityBerry 12 hours to scan your USB drives, then you should provide at least that much time for the device to be powered-up.
 
 
 Advanced Uses
