@@ -34,6 +34,7 @@ if test -n "$partition"; then
     name="${name}_$partition"
 fi
 name="${name}_$UM_UUID"  # FIXITY BERRY CHANGE FROM ORIGINAL SCRIPT TO ALLOW FOR MOUNTING WITH FULL NAME
+name="${name}_$UM_LABEL" # FIXITY BERRY CHANGE
 # If the symlink does not yet exist, create it.
 test -e "/var/run/usbmount/$name" || ln -sf "$UM_MOUNTPOINT" "/var/run/usbmount/$name"
 
