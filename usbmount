@@ -170,7 +170,7 @@ if [ "$1" = add ]; then
 		export UM_MOUNTOPTIONS="$options"
 		export UM_VENDOR="$vendor"
 		export UM_MODEL="$model"
-		export UM_UUID="$UUID"
+		export UM_UUID="$UUID"  # FIXITY BERRY CHANGE FROM ORIGINAL SCRIPT FOR MOUNTING BASED ON DEVICE FULL NAME
 log info "executing command: run-parts /etc/usbmount/mount.d"
 		run-parts /etc/usbmount/mount.d || :
 	    else
