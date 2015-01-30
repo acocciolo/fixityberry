@@ -33,7 +33,7 @@ partition=`echo "$UM_DEVICE" | sed 's/^.*[^0123456789]\([0123456789]*\)/\1/'`
 if test -n "$partition"; then
     name="${name}_$partition"
 fi
-name="${name}_$UM_UUID"
+name="${name}_$UM_UUID"  # FIXITY BERRY CHANGE FROM ORIGINAL SCRIPT TO ALLOW FOR MOUNTING WITH FULL NAME
 # If the symlink does not yet exist, create it.
 test -e "/var/run/usbmount/$name" || ln -sf "$UM_MOUNTPOINT" "/var/run/usbmount/$name"
 
