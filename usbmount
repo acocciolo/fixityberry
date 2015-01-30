@@ -91,6 +91,7 @@ if [ "$1" = add ]; then
     FSTYPE=$(echo "$DEVINFO" | sed 's/.*[[:blank:]]TYPE="\([^"]*\)".*/\1/g; s/[[:blank:]]*//g;')
     UUID=$(echo "$DEVINFO"   | sed 's/.*[[:blank:]]UUID="\([^"]*\)".*/\1/g; s/[[:blank:]]*//g;')
     USAGE=$(echo "$DEVINFO"  | sed 's/.*[[:blank:]]USAGE="\([^"]*\)".*/\1/g; s/[[:blank:]]*//g;')
+    LABEL=$(echo "$DEVINFO"  | sed 's/.*[[:blank:]]LABEL="\([^"]*\)".*/\1/g; s/[[:blank:]]*//g;') # FIXITY BERRY CHANGE
 
     if ! echo $USAGE | egrep -q "(filesystem|disklabel)"; then
 	log info "$DEVNAME does not contain a filesystem or disklabel"
@@ -171,6 +172,7 @@ if [ "$1" = add ]; then
 		export UM_VENDOR="$vendor"
 		export UM_MODEL="$model"
 		export UM_UUID="$UUID"  # FIXITY BERRY CHANGE FROM ORIGINAL SCRIPT FOR MOUNTING BASED ON DEVICE FULL NAME
+		export UM_LABEL="$LABEL"  # FIXITY BERRY CHANGE
 log info "executing command: run-parts /etc/usbmount/mount.d"
 		run-parts /etc/usbmount/mount.d || :
 	    else
